@@ -1,18 +1,13 @@
 //destructure lineup
-const [{id},{name},{position},{gameId},{teamId},{salary}] = lineup
-//create a function that puts on the salary cap.
-const salaryCap = (lineup) => {
-    for (let i = 0; i < lineup.length;){
-        if(salary[i] > 45,000){
-            return false
-        }
-    }
-    
- 
-
 //create validatelineup function
-const validateLindeup = () => {
-    
-}
+const validateLineup = (lineup) => {
+    //salarycap
+    const playerSalaries = lineup.map
+             ( lu => lu.salary).reduce
+             ((sum, val) => sum + val, 0)
+             if (playerSalaries > (45,000))
+            return false
+   }
 
-module.exports = validateLindeup
+
+module.exports = validateLineup
